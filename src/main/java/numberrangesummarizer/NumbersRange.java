@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
  * @author Yandisa Madinga
  */
 //This class implements the NumberRangeSummarizer interface 
-//Groups input into numbers and format the range
 public class NumbersRange implements NumberRangeSummarizer {
-
+    
+    //Collects input as a string and converts it into a collection of integers.
     @Override 
     public Collection<Integer> collect(String input) {
         try {
@@ -31,6 +31,7 @@ public class NumbersRange implements NumberRangeSummarizer {
         return null;
     }
 
+     //Group numbers from the collection into a range when they are sequential and produces a comma delimited summary of numbers from the collection
     @Override
     public String summarizeCollection(Collection<Integer> input) {
        List<String> ranges = new ArrayList<>();
@@ -52,7 +53,7 @@ public class NumbersRange implements NumberRangeSummarizer {
         ranges.add(outputFormat(currentRange));
         return String.join(", ", ranges);
     }
-    //formats the range of numbers
+    //formats the range of numbers by adding and adds - between the range.
     private String outputFormat(List<Integer> range){
         if (range.size() == 1) {
             return String.valueOf(range.get(0));
