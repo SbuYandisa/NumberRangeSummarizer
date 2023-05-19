@@ -1,4 +1,7 @@
 # NumberRangeSummarizer
+
+Assumptions for this project are at the begining of each test case.
+
 - Files location:
     - Main files are found at: src/main/java/numberrangesummarizer.
     - Test files are found at: src/test/java.
