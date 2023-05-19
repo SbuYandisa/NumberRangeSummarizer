@@ -1,5 +1,7 @@
 # NumberRangeSummarizer
 
+# This branch was created so the pull request is possible, it is not different from the master branch, the mistake I made was to only work on my local branch and only push to remote only when I have finilized the project.
+
 Assumptions for this project are at the begining of each test case.
 
 - Files location:
